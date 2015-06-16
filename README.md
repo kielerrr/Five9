@@ -21,7 +21,6 @@ updateCrmRecord
 Lists:
 ----------------------
 addRecordToList
-
 addRecordToList.xml
 
 addRecordToListSimple
