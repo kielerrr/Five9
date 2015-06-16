@@ -1,34 +1,42 @@
-# Five9
-Class with examples for CRUD'ing Five9 config-web services API
+#Five9 CRUD Class
+Class *with examples* for CRUD'ing Five9 config-web services API
 
-First edit credentials in includes/Five9.php
+Set credentials in ```includes/Five9.php```
+```php
+//set your admin account name
+define('USER', '');
+//set API login
+define('LOGIN', '');
+define('PASSWORD', '');
+```
 
-All files in contacts and lists are templated examples with response commented at the bottom of each :)
+####Expamples found in
+* ``contacts`` 
+* ``lists``
 
-Methods Supported:
+##Methods Supported:
+---
 
-Contact(CRM):
-----------------------
-deleteFromContacts
-deleteFromContactsCsv
-getContactFields
-getContactRecords
-getContactRecords_all
-updateContacts
-updateContactsCsv
-updateCrmRecord
+###Contact Records
 
-Lists:
-----------------------
-addRecordToList
-addRecordToList.xml
+* deleteFromContacts
+* deleteFromContactsCsv
+* getContactFields
+* getContactRecords
+* getContactRecords_all
+* updateContacts
+* updateContactsCsv
+* updateCrmRecord
 
-addRecordToListSimple
-addToList
-addToListCsv
-asyncAddRecordsToList
-deleteAllFromList
-deleteFromList
-deleteFromListCsv
-deleteRecordFromList
-getListsInfo
+###List Records
+
+* addRecordToList
+* addRecordToListSimple
+* addToList
+* addToListCsv
+* asyncAddRecordsToList
+* deleteAllFromList
+* deleteFromList
+* deleteFromListCsv
+* deleteRecordFromList
+* getListsInfo
