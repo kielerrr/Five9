@@ -13,6 +13,7 @@ define('PASSWORD', '');
 ####Expamples found in
 * ``contacts`` 
 * ``lists``
+* ``fields``
 
 ##Methods Supported:
 ---
@@ -21,7 +22,6 @@ define('PASSWORD', '');
 
 * deleteFromContacts
 * deleteFromContactsCsv
-* getContactFields
 * getContactRecords
 * getContactRecords_all
 * updateContacts
@@ -40,3 +40,10 @@ define('PASSWORD', '');
 * deleteFromListCsv
 * deleteRecordFromList
 * getListsInfo
+
+###List Records
+
+* createContactField
+* deleteContactField
+* getContactFields
+* modifyContactField.php
