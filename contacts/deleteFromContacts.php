@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * SERVICE CALLS:
  * crmDeleteSettings (extends basicImportSettings)
  * importData type: importData
@@ -34,7 +36,7 @@ $crmDeleteSettings = array_merge($basicImportSettings, $crmDeleteSettings);
 
 
 $importData = array (                       //required array: values matching in 'fieldsMapping'
-    array ( "5555555555","test","name"),
+    array ( "3716867197","test","name"),
 
 );
 
@@ -43,8 +45,7 @@ print_r($result);
 
 /*
 RETURNS
-contacts/deleteFromContacts.php
-Begin<br/><br/>stdClass Object
+Begin<br/><br/>601fa926-f058-45d5-86e8-43b720beaf76stdClass Object
 (
     [return] => stdClass Object
         (

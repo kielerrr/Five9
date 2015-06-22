@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * SERVICE CALLS:
  * lookupCriteria type: crmLookupCriteria
  *
@@ -30,7 +32,6 @@ var_dump($result);
 echo '</pre>';
 echo "END";
 /*
-contacts/getContactRecords.php
 Begin<br/><br/>asdfasdfstring(583) "<?xml version="1.0" encoding="UTF-8"?>
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://service.admin.ws.five9.com/">
   <SOAP-ENV:Body>
@@ -153,5 +154,3 @@ Process finished with exit code 0
 
 
 */
-
-?>

@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * ------USE ONLY OFF PEAK------
  * SERVICE CALLS:
  * crmUpdateSettings (extends basicImportSettings)
@@ -41,8 +43,6 @@ $result = $five9->updateContactsCsv($crmUpdateSettings, $csvData);
 print_r($result);
 /*
 RESULT
-
-deleteFromListCsv.php
 Begin<br/><br/>stdClass Object
 (
     [return] => stdClass Object
@@ -64,5 +64,3 @@ Begin<br/><br/>stdClass Object
 )
 <br/><br/>END
 Process finished with exit code 0*/
-
-?>

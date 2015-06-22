@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * ------USE ONLY OFF PEAK------
  * SERVICE CALLS:
  * crmUpdateSettings (extends basicImportSettings)
@@ -33,8 +35,8 @@ $crmUpdateSettings = array(
 $crmUpdateSettings = array_merge($basicImportSettings, $crmUpdateSettings);
 
 $importData = array (
-    array ( "5555776741" , "bb44oy" , "Draper" ),
-    array ( "5551112239" , "betty111" , "Smith" ),
+    array ( "5555776741" , "test_first" , "test_last" ),
+    array ( "5551112239" , "test_first2" , "test_last2" ),
     array ( rand(1111111111,9999999999), "test", "name")
 );
 
@@ -43,7 +45,7 @@ $result = $five9->updateContacts($crmUpdateSettings, $importData);
 print_r($result);
 /*
 
-contacts/updateContacts.php
+ssh://ryan@192.168.1.145:22/usr/bin/php /home/ryan/www/reporting/Five9/API/contacts/updateContacts.php
 stdClass Object
 (
     [return] => stdClass Object

@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * ------ADDS MULTIPLE RECORDS------
  * SERVICE CALLS:
  * listName string
@@ -47,7 +49,8 @@ $csvData = file_get_contents('../includes/testList.csv');
 
 $result = $five9->addToListCsv($listName, $listUpdateSettings,$csvData);
 print_r($result);
-/*lists/addToListCsv.php
+/*
+RETURNS
 stdClass Object
 (
     [return] => stdClass Object
@@ -68,7 +71,7 @@ stdClass Object
             [callNowQueued] => 0
             [crmRecordsInserted] => 0
             [crmRecordsUpdated] => 5
-            [listName] =>test list
+            [listName] => test web2campaign list
             [listRecordsDeleted] => 0
             [listRecordsInserted] => 0
         )
@@ -78,5 +81,3 @@ stdClass Object
 Process finished with exit code 0
 
 */
-
-?>

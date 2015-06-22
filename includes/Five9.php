@@ -1,10 +1,9 @@
 <?php
-//set your main account name
-define('USER', '');
-//set API login
-define('LOGIN', '');
-define('PASSWORD', '');
-
+/**
+ *  * Created By: Ryan Kiel
+ *
+ * Class f9
+ */
 
 class f9
 {
@@ -14,9 +13,9 @@ class f9
      */
     function __construct()
     {
-        $wsdl_five9 = "https://api.five9.com/wsadmin/v3/AdminWebService?wsdl&user=".USER;
+        $wsdl_five9 = "https://api.five9.com/wsadmin/v4/AdminWebService?wsdl&user=YOUR_USER_NAME_HERE";
         try {
-            $soap_options = array('login' => LOGIN, 'password' => PASSWORD, 'trace' => true);
+            $soap_options = array('login' => 'YOUR_LOGIN_HERE', 'password' => 'YOUR_PASSWORD_HERE', 'trace' => true);
             $this->_connection = new SoapClient($wsdl_five9, $soap_options);
         } catch (Exception $e) {
             $error_message = $e->getMessage();
@@ -54,17 +53,6 @@ class f9
         $result = $this->_connection->deleteFromContactsCsv($data);
         $result = $this->checkImport($result, 'getCrmImportResult');
         return $result;
-    }
-
-    /**
-     * @param string $namePattern regex for contact fields.. returns all if omitted
-     */
-    function getContactFields($namePattern)
-    {
-        $result = $this->_connection->getContactFields($namePattern);
-        $result = $this->returnVariables($result);
-        return $result;
-
     }
 
     /**
@@ -303,6 +291,45 @@ class f9
         return $result;
     }
 
+    /**
+     * @param $field
+     * @return mixed
+     */
+    function createContactField($field)
+    {
+        $result = $this->_connection->createContactField($field);
+        return $result;
+    }
+
+    /**
+     * @param $field
+     * @return mixed
+     */
+    function modifyContactField($field)
+    {
+        $result = $this->_connection->modifyContactField($field);
+        return $result;
+    }
+
+    /**
+     * @param string $namePattern regex for contact fields.. returns all if omitted
+     */
+    function getContactFields($namePattern)
+    {
+        $result = $this->_connection->getContactFields($namePattern);
+        $result = $this->returnVariables($result);
+        return $result;
+    }
+
+    /**
+     * @param $field
+     * @return mixed
+     */
+    function deleteContactField($fieldName)
+    {
+        $result = $this->_connection->deleteContactField($fieldName);
+        return $result;
+    }
 
     /**
      * @return string

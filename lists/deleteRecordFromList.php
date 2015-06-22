@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * ------DELETES 1 RECORD FROM A LIST-----
  * SERVICE CALLS:
  * listName
@@ -45,8 +47,6 @@ print_r($result);
 
 /*
 RETURNS
-
-lists/deleteRecordFromList.php
 stdClass Object
 (
     [return] => stdClass Object
@@ -62,7 +62,7 @@ stdClass Object
             [callNowQueued] => 0
             [crmRecordsInserted] => 0
             [crmRecordsUpdated] => 0
-            [listName] =>test list
+            [listName] => test web2campaign list
             [listRecordsDeleted] => 0
             [listRecordsInserted] => 0
         )

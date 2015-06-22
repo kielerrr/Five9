@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * ------GETS GENERAL INFO ABOUT A LIST------
  * SERVICE CALLS:
  * listNamePattern string
@@ -10,15 +12,13 @@ include_once '../includes/Five9.php';
  */
 $five9 = new f9();
 
-$listNamePattern = null;            //Returns all lists
+$listNamePattern = null;            //Returns all lists if null
 //$listNamePattern = "test list";   //Returns specified list
 
 $result = $five9->getListsInfo($listNamePattern);
 print_r($result);
 /*
 RETURNS
-
-/llists/getListsInfo.php
 stdClass Object
 (
     [return] => Array
@@ -31,25 +31,25 @@ stdClass Object
 
             [1] => stdClass Object
                 (
-                    [name] =>test list
+                    [name] => test web2campaign list
                     [size] => 1
                 )
 
             [2] => stdClass Object
                 (
-                    [name] =>  Live Declined
+                    [name] => Derma Live Declined
                     [size] => 0
                 )
 
             [3] => stdClass Object
                 (
-                    [name] =>  Period Declined
+                    [name] => Derna Period Declined
                     [size] => 0
                 )
 
             [4] => stdClass Object
                 (
-                    [name] => Live Decline 
+                    [name] => Live Decline Derma
                     [size] => 0
                 )
 
@@ -58,7 +58,4 @@ stdClass Object
 )
 
 Process finished with exit code 0
-
-
 */
-?>

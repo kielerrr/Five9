@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * ------ADDS MULTIPLE RECORDS------
  * SERVICE CALLS:
  * listName string
@@ -12,7 +14,7 @@ include_once '../includes/Five9.php';
  */
 $five9 = new f9();
 
-$listName = "test list";
+$listName = "test web2campaign list";
 
 $basicImportSettings = array(
     'allowDataCleanup' => 'false',          //required bool: remove duplicates on key, default false
@@ -42,8 +44,8 @@ $listUpdateSettings = array(
 $listUpdateSettings = array_merge($basicImportSettings, $listUpdateSettings);
 
 $importData = array (
-    array ( "5555776741" , "Don0454545" , "Draper" ),
-    array ( "5551112239" , "betty" , "Smith" ),
+    array ( "5555776741" , "test_first" , "test_last" ),
+    array ( "5551112239" , "test_first2" , "test_last2" ),
     array ( rand(1111111111,9999999999), "test", "name")
 );
 
@@ -73,4 +75,3 @@ stdClass Object
 <br/><br/>END
 Process finished with exit code 0
 */
-?>

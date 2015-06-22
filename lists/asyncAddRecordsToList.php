@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * ------ADDS MULTIPLE RECORDS------
  * SERVICE CALLS:
  * listName string
@@ -41,12 +43,14 @@ $listUpdateSettings = array(
 //ALL SERVICE PARAMETERS BELOW
 $listUpdateSettings = array_merge($basicImportSettings, $listUpdateSettings);
 
+
 $importData = array (
     array ( "5555776741" , "Don0454545" , "Draper" ),
-    array ( "5551112239" , "betty777777" , "Smith" ),
-    array ( rand(1111111111,9999999999), "test", "name")
+//    array ( "5551112239" , "betty777777" , "Smith" ),
+//    array ( rand(1111111111,9999999999), "test", "name")
 );
 
-$result = $five9->asyncAddRecordsToList($listName, $listUpdateSettings,$importData);
+$result = $five9->asyncAddRecordsToList($listName, $listUpdateSettings, $importData);
 print_r($result);
+
 ?>

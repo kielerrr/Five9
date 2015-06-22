@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * SERVICE CALLS:
  * lookupCriteria type: crmLookupCriteria
  *
@@ -20,6 +22,7 @@ echo '</pre>';
 echo "END";
 
 /*
+ * RETURNS
  array (size=1)
   'return' =>
     object(stdClass)[3]
@@ -51,7 +54,7 @@ echo "END";
                 object(stdClass)[5]
                   public 'data' =>
                     array (size=18)
-                      0 => string '5555555555' (length=10)
+                      0 => string '' (length=10)
                       1 => string '' (length=0)
                       2 => string '' (length=0)
                       3 => string '' (length=0)
@@ -61,10 +64,10 @@ echo "END";
                       7 => string '' (length=0)
                       8 => string '' (length=0)
                       9 => string '' (length=0)
-                      10 => string 'some user' (length=19)
-                      11 => string 'inbound testing' (length=15)
+                      10 => string ' ' (length=19)
+                      11 => string ' ' (length=15)
                       12 => string '' (length=0)
-                      13 => string '5555555555' (length=10)
+                      13 => string '' (length=10)
                       14 => string '111111111111111' (length=15)
                       15 => string '2015-06-07 21:59:35.331' (length=23)
                       16 => string 'TEST' (length=4)
@@ -75,7 +78,7 @@ echo "END";
                 object(stdClass)[7]
                   public 'data' =>
                     array (size=18)
-                      0 => string '8018083373' (length=10)
+                      0 => string '' (length=10)
                       1 => string '' (length=0)
                       2 => string '' (length=0)
                       3 => string '' (length=0)
@@ -85,10 +88,10 @@ echo "END";
                       7 => string '' (length=0)
                       8 => string '' (length=0)
                       9 => string '' (length=0)
-                      10 => string 'some user' (length=19)
-                      11 => string 'test outbound' (length=13)
+                      10 => string '' (length=19)
+                      11 => string 'test ' (length=13)
                       12 => string '' (length=0)
-                      13 => string '8018083373' (length=10)
+                      13 => string '' (length=10)
                       14 => string '' (length=0)
                       15 => string '2015-06-04 21:34:08.080' (length=23)
                       16 => string 'Do Not Call' (length=11)
@@ -99,7 +102,7 @@ echo "END";
                 object(stdClass)[9]
                   public 'data' =>
                     array (size=18)
-                      0 => string '8454253105' (length=10)
+                      0 => string '' (length=10)
                       1 => string '' (length=0)
                       2 => string '' (length=0)
                       3 => string '' (length=0)
@@ -109,10 +112,10 @@ echo "END";
                       7 => string '' (length=0)
                       8 => string '' (length=0)
                       9 => string '' (length=0)
-                      10 => string 'somebody@someplace.com' (length=30)
-                      11 => string 'Some Campaign  Inbound' (length=16)
+                      10 => string '@.com' (length=30)
+                      11 => string ' ' (length=16)
                       12 => string '' (length=0)
-                      13 => string '8454253105' (length=10)
+                      13 => string '' (length=10)
                       14 => string '' (length=0)
                       15 => string '2015-06-04 20:22:13.080' (length=23)
                       16 => string 'Do Not Call' (length=11)

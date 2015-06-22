@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * ------ONLY UPDATES SINGLE RECORDS------
  * SERVICE CALLS:
  * listName string
@@ -12,7 +14,7 @@ include_once '../includes/Five9.php';
  */
 $five9 = new f9();
 
-$listName = "test list";
+$listName = "test web2campaign list";
 
 $basicImportSettings = array(
     'allowDataCleanup' => 'false',          //required bool: remove duplicates on key, default false
@@ -53,7 +55,7 @@ echo "END";
 /*
 RETURNS
 
-addRecordToList.php
+ssh://ryan@192.168.1.145:22/usr/bin/php /home/ryan/www/reporting/Five9/API/addRecordToList.php
 Begin<br/><br/><pre>array(1) {
     'return' =>
   class stdClass#3 (10) {

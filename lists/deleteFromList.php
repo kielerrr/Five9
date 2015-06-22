@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  *  * ------DELETES MULTIPLE RECORDS DOES NOT DELETE CRM CONTACTS------
  * SERVICE CALLS:
  * listName
@@ -12,7 +14,7 @@ include_once '../includes/Five9.php';
  */
 $five9 = new f9();
 
-$listName = "test list";
+$listName = "test web2campaign list";
 
 $basicImportSettings = array(
     'allowDataCleanup' => 'false',          //required bool: remove duplicates on key, default false
@@ -46,7 +48,6 @@ $result = $five9->deleteFromList($listName, $listDeleteSettings,$importData);
 print_r($result);
 /*
 RETURNS
-lists/deleteFromList.php
 stdClass Object
 (
     [return] => stdClass Object
@@ -68,7 +69,7 @@ stdClass Object
             [callNowQueued] => 0
             [crmRecordsInserted] => 0
             [crmRecordsUpdated] => 0
-            [listName] =>test list
+            [listName] => test web2campaign list
             [listRecordsDeleted] => 2
             [listRecordsInserted] => 0
         )

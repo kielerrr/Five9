@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * ------ONLY UPDATES SINGLE RECORDS------
  * SERVICE CALLS:
  * crmUpdateSettings (extends basicImportSettings)
@@ -32,7 +34,7 @@ $crmUpdateSettings = array(
 //ALL SERVICE PARAMETERS BELOW
 $crmUpdateSettings = array_merge($basicImportSettings, $crmUpdateSettings);
 
-$record = array ( "5555555555" , "hi" , "hiiii" );
+$record = array ( "8885559999" , "hi" , "hiiii" );
 
 $xml_data = array ('crmUpdateSettings' => $crmUpdateSettings, 'record' => $record); //request parameters
 $result = $five9->updateCrmRecord($crmUpdateSettings, $record);
@@ -40,7 +42,6 @@ print_r($result);
 
 
 /*
-contacts/updateCrmRecord.php
 stdClass Object
 (
     [return] => stdClass Object
@@ -66,7 +67,6 @@ Process finished with exit code 0
 OTHER ERRORS
 
 //ALL SERVICE PARAMETERS BELOW
-contacts/updateCrmRecord.php
 stdClass Object
 (
     [return] => stdClass Object
@@ -103,4 +103,3 @@ Process finished with exit code 0
 
 
 */
-?>

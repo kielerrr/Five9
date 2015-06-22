@@ -1,6 +1,8 @@
 <?php
 include_once '../includes/Five9.php';
 /**
+ *  * Created By: Ryan Kiel
+ *
  * ------DELETES ALL RECORDS IN A LIST, DOES NOT DELETE CONTACTS-----
  * SERVICE CALLS:
  * listName string
@@ -12,13 +14,12 @@ include_once '../includes/Five9.php';
 $five9 = new f9();
 
 $listName = 'test list';
-$reportEmail = "foo@bar.com";
+$reportEmail = "admin@google.com";
 
 $result = $five9->deleteAllFromList($listName, $reportEmail);
 print_r($result);
 /*
- *
-lists/deleteAllFromList.php
+RETURNS
 stdClass Object
 (
     [return] => stdClass Object
@@ -33,7 +34,7 @@ stdClass Object
             [callNowQueued] => 0
             [crmRecordsInserted] => 0
             [crmRecordsUpdated] => 0
-            [listName] =>test list
+            [listName] => test  list
             [listRecordsDeleted] => 16
             [listRecordsInserted] => 0
         )
@@ -41,7 +42,4 @@ stdClass Object
 )
 
 Process finished with exit code 0
-
-
 */
-?>
