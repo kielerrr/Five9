@@ -1,4 +1,4 @@
-#Five9 CRUD Class
+# Five9 CRUD Class
 Class *with examples* for CRUD'ing Five9 config-web services API
 
 Set credentials in ```includes/Five9.php```
@@ -10,15 +10,15 @@ define('LOGIN', '');
 define('PASSWORD', '');
 ```
 
-####Expamples found in
+#### Expamples found in
 * ``contacts`` 
 * ``lists``
 * ``fields``
 
-##Methods Supported:
+## Methods Supported:
 ---
 
-###Contact Records
+### Contact Records
 
 * deleteFromContacts
 * deleteFromContactsCsv
@@ -28,7 +28,7 @@ define('PASSWORD', '');
 * updateContactsCsv
 * updateCrmRecord
 
-###List Records
+### List Records
 
 * addRecordToList
 * addRecordToListSimple
@@ -41,7 +41,7 @@ define('PASSWORD', '');
 * deleteRecordFromList
 * getListsInfo
 
-###List Records
+### List Records
 
 * createContactField
 * deleteContactField
