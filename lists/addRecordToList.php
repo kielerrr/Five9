@@ -55,7 +55,6 @@ echo "END";
 /*
 RETURNS
 
-ssh://ryan@192.168.1.145:22/usr/bin/php /home/ryan/www/reporting/Five9/API/addRecordToList.php
 Begin<br/><br/><pre>array(1) {
     'return' =>
   class stdClass#3 (10) {
